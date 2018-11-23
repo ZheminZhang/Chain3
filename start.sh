@@ -23,5 +23,5 @@ if [ ! -d "$DIRECTORY" ]; then
     geth --datadir $datadir/$no init $datadir/genesis
 fi
 # 运行geth，启动console
-geth --preload ~/test/autoMine.js --datadir $datadir/$no --networkid 11100 --ipcdisable --port 619$no --rpc --rpcapi "db,eth,net,web3,personal" --rpcaddr $ip --rpccorsdomain "*" --rpcport 81$no --bootnodes $bootnode_addr console
+geth --preload ./autoMine.js --datadir $datadir/$no --networkid 11100 --ipcdisable --port 619$no --rpc --rpcapi "db,eth,net,web3,personal" --rpcaddr $ip --rpccorsdomain "*" --rpcport 81$no --bootnodes $bootnode_addr console
 #geth --datadir $datadir/$no --networkid 11100 --ipcdisable --port 619$no --rpc --rpcapi "db,eth,net,web3,personal" --rpcaddr $ip --rpccorsdomain "*" --rpcport 81$no --bootnodes $bootnode_addr console
