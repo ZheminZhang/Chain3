@@ -8,6 +8,7 @@ ip=$(ifconfig|grep inet|grep -v inet6|grep broadcast|awk '{print $2}')
 # 解析bootnode地址
 #bootnode_addr=enode://"$(grep enode bootnode.log|tail -n 1|awk -F '://' '{print $2}'|awk -F '@' '{print $1}')""@$ip:30301"
 bootnode_addr=enode://"$(tail bootnode.log)""@$ip:30301"
+echo $bootnode_addr
 if [ "$1" == "" ];then
     echo "node id is empty, please use: start.sh <node_id>";
     exit
@@ -23,5 +24,7 @@ if [ ! -d "$DIRECTORY" ]; then
     geth --datadir $datadir/$no init $datadir/genesis
 fi
 # 运行geth，启动console
-geth --preload ./autoMine.js --datadir $datadir/$no --networkid 11100 --ipcdisable --port 619$no --rpc --rpcapi "db,eth,net,web3,personal" --rpcaddr $ip --rpccorsdomain "*" --rpcport 81$no --bootnodes $bootnode_addr console
-#geth --datadir $datadir/$no --networkid 11100 --ipcdisable --port 619$no --rpc --rpcapi "db,eth,net,web3,personal" --rpcaddr $ip --rpccorsdomain "*" --rpcport 81$no --bootnodes $bootnode_addr console
+# 本机 IP
+# geth --preload ./autoMine.js --datadir $datadir/$no --networkid 11100 --ipcdisable --port 619$no --rpc --rpcapi "db,eth,net,web3,personal" --rpcaddr $ip --rpccorsdomain "*" --rpcport 81$no --bootnodes $bootnode_addr console
+# local host
+geth --preload ./autoMine.js --datadir $datadir/$no --networkid 11100 --ipcdisable --port 619$no --rpc --rpcapi "db,eth,net,web3,personal" --rpcaddr 127.0.0.1 --rpccorsdomain "*" --rpcport 81$no --bootnodes $bootnode_addr console

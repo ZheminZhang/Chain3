@@ -1,0 +1,16 @@
+enode://d060200f45cec967e7e73ae081cc4ca6fbb3beb6e916de566e353dfc2e533a67be4f363b28eafbe03c79688d6881441da39af8475a9ee279f3b8455f4ae26658@127.0.0.1:0?discport=30301
+Note: you're using cmd/bootnode, a developer tool.
+We recommend using a regular node as bootstrap node for production deployments.
+INFO [04-23|12:54:40.144] New local node record                    seq=1 id=ef9b841b7483db1b ip=<nil> udp=0 tcp=0
+enode://d060200f45cec967e7e73ae081cc4ca6fbb3beb6e916de566e353dfc2e533a67be4f363b28eafbe03c79688d6881441da39af8475a9ee279f3b8455f4ae26658@127.0.0.1:0?discport=30301
+Note: you're using cmd/bootnode, a developer tool.
+We recommend using a regular node as bootstrap node for production deployments.
+INFO [04-23|13:35:29.197] New local node record                    seq=1 id=ef9b841b7483db1b ip=<nil> udp=0 tcp=0
+enode://d060200f45cec967e7e73ae081cc4ca6fbb3beb6e916de566e353dfc2e533a67be4f363b28eafbe03c79688d6881441da39af8475a9ee279f3b8455f4ae26658@127.0.0.1:0?discport=30301
+Note: you're using cmd/bootnode, a developer tool.
+We recommend using a regular node as bootstrap node for production deployments.
+INFO [04-23|13:35:33.693] New local node record                    seq=1 id=ef9b841b7483db1b ip=<nil> udp=0 tcp=0
+enode://d060200f45cec967e7e73ae081cc4ca6fbb3beb6e916de566e353dfc2e533a67be4f363b28eafbe03c79688d6881441da39af8475a9ee279f3b8455f4ae26658@127.0.0.1:0?discport=30301
+Note: you're using cmd/bootnode, a developer tool.
+We recommend using a regular node as bootstrap node for production deployments.
+INFO [04-23|13:39:09.164] New local node record                    seq=1 id=ef9b841b7483db1b ip=<nil> udp=0 tcp=0

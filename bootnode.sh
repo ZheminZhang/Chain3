@@ -4,4 +4,5 @@ if [ ! -f bootnode.key ];then
 fi
 pkill bootnode
 ## 后台启动bootnode，将输出重定向至bootnode.log文件
-nohup bootnode -nodekey=bootnode.key -writeaddress > bootnode.log&
+bootnode -nodekey=bootnode.key -writeaddress > bootnode.log
+nohup bootnode -nodekey=bootnode.key &
